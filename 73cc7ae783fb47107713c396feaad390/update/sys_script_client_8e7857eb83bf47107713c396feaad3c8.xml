@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>email</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Email Validation</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    // Standard Email Regular Expression Pattern
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    // Test the value typed by the user
+    if (!emailRegex.test(newValue)) {
+        // Display an error message directly under the field
+        g_form.showFieldMsg('email', 'Please enter a valid email format (e.g., user@domain.com).', 'error');
+        
+        // Optional: Clear the invalid value so they have to re-enter it
+        // g_form.setValue('email', '');
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 11:55:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e7857eb83bf47107713c396feaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Email Validation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Student Management " source="x_2218665_studen_0">73cc7ae783fb47107713c396feaad390</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Management ">73cc7ae783fb47107713c396feaad390</sys_scope>
+        <sys_update_name>sys_script_client_8e7857eb83bf47107713c396feaad3c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 11:55:12</sys_updated_on>
+        <table>x_2218665_studen_0_student_record</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
