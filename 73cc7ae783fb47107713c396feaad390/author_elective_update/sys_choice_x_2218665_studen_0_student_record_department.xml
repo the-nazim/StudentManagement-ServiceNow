@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="department" table="x_2218665_studen_0_student_record" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <name>x_2218665_studen_0_student_record</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-14 10:42:39</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>department</sys_name>
+            <sys_package display_value="Student Management " source="x_2218665_studen_0">73cc7ae783fb47107713c396feaad390</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Student Management ">73cc7ae783fb47107713c396feaad390</sys_scope>
+            <sys_update_name>sys_choice_x_2218665_studen_0_student_record_department</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-14 10:42:39</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BA</label>
+            <language>en</language>
+            <name>x_2218665_studen_0_student_record</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-14 10:43:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-14 10:43:15</sys_updated_on>
+            <value>ba</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>CS</label>
+            <language>en</language>
+            <name>x_2218665_studen_0_student_record</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-14 10:43:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-14 10:43:00</sys_updated_on>
+            <value>cs</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EE</label>
+            <language>en</language>
+            <name>x_2218665_studen_0_student_record</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-14 10:42:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-14 10:42:50</sys_updated_on>
+            <value>ee</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>ME</label>
+            <language>en</language>
+            <name>x_2218665_studen_0_student_record</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-10-14 10:43:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-10-14 10:43:27</sys_updated_on>
+            <value>me</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

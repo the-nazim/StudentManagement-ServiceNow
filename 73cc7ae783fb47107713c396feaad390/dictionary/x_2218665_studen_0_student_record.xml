@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="c0460ba7833f47107713c396feaad3c5" label="Student Record" max_length="40" name="x_2218665_studen_0_student_record" type="collection">
+        <element default="javascript:gs.getUserID();" dynamic_default_value="90d1921e5f510100a9ad2572f2b477fe" label="Registrar" max_length="32" name="registrar" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element choice="1" label="Department" max_length="40" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="ME" value="me"/>
+                <element inactive_on_update="false" label="CS" value="cs"/>
+                <element inactive_on_update="false" label="BA" value="ba"/>
+                <element inactive_on_update="false" label="EE" value="ee"/>
+            </choice>
+        </element>
+        <element label="Email" max_length="40" name="email" type="string"/>
+        <element label="Advisor" max_length="32" name="advisor" reference="sys_user" type="reference"/>
+        <element label="Remarks" max_length="50" name="remarks" type="string"/>
+        <element label="First Name" max_length="20" name="first_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Student ID" max_length="40" name="number" type="string"/>
+        <element label="Graduated Date" max_length="40" name="graduated_date" type="glide_date"/>
+        <element label="Last Name" max_length="20" name="last_name" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Dropped Out" value="dropped_out"/>
+                <element inactive_on_update="false" label="Enrolled" value="enrolled"/>
+                <element inactive_on_update="false" label="Graduated" value="graduated"/>
+            </choice>
+        </element>
+        <element choice="1" label="Gender" max_length="40" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Female" value="female"/>
+                <element inactive_on_update="false" label="Male" value="male"/>
+                <element inactive_on_update="false" label="Other" value="other"/>
+            </choice>
+        </element>
+        <element label="GPA" max_length="20" name="gpa" type="decimal"/>
+        <element label="Admission Date" max_length="40" name="admission_date" type="glide_date"/>
+        <index name="index">
+            <element name="advisor"/>
+        </index>
+        <index name="index2">
+            <element name="registrar"/>
+        </index>
+    </element>
+</database>
