@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.status != 'graduated'  &amp;&amp; (gs.hasRole('x_2218665_studen_0.student.admins') || gs.hasRole('x_2218665_studen_0.student.registrars'))</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_icon/>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_button_icon/>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Mark as Graduated</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[(function executeUIAction() {
+    // 1. Condition 3: Update the backend status choice to "Graduated"
+    current.status = 'graduated'; 
+    
+    // 2. Commit the change directly to the server database
+    current.update();
+    
+    // 3. Display a clean confirmation message at the top of the screen
+    gs.addInfoMessage('Student record has been successfully marked as Graduated.');
+    
+    // 4. Reload the form view so the button disappears immediately
+    action.setRedirectURL(current);
+})();
+]]></script>
+        <show_form_icon_only>false</show_form_icon_only>
+        <show_insert>false</show_insert>
+        <show_list_icon_only>false</show_list_icon_only>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-14 13:52:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>93c2b7eb837387107713c396feaad3f5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Mark as Graduated</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Student Management " source="x_2218665_studen_0">73cc7ae783fb47107713c396feaad390</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Management ">73cc7ae783fb47107713c396feaad390</sys_scope>
+        <sys_update_name>sys_ui_action_93c2b7eb837387107713c396feaad3f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-14 14:04:05</sys_updated_on>
+        <table>x_2218665_studen_0_student_record</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>
