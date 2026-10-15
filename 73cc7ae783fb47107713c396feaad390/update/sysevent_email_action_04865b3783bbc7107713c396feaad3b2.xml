@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_2218665_studen_0_student_record</collection>
+        <condition table="x_2218665_studen_0_student_record">statusVALCHANGES^EQ<item display_value="-- None --" endquery="false" field="status" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <default_digest>false</default_digest>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digest_type>single</digest_type>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>activate.life.cycle.migration</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>&lt;p&gt;Hello,&lt;/p&gt;<br>&lt;p&gt;The status of student ${first_name} ${last_name} (Student ID: ${number}) has been updated.&lt;/p&gt;<br>&lt;p&gt;&lt;strong&gt;New Status:&lt;/strong&gt; ${u_status}&lt;/p&gt;<br>&lt;p&gt;&lt;strong&gt;Additional Details:&lt;/strong&gt;&lt;/p&gt;<br>&lt;table&gt;<br>&nbsp; &lt;tr&gt;&lt;td&gt;&lt;strong&gt;- Department:&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;${department}&lt;/td&gt;&lt;/tr&gt;<br>&nbsp; &lt;tr&gt;&lt;td&gt;&lt;strong&gt;- Advisor:&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;${advisor}&lt;/td&gt;&lt;/tr&gt;<br>&nbsp; &lt;tr&gt;&lt;td&gt;&lt;strong&gt;- Registrar:&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;${registrar}&lt;/td&gt;&lt;/tr&gt;<br>&nbsp; &lt;tr&gt;&lt;td&gt;&lt;strong&gt;- Admission Date:&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;${admission_date}&lt;/td&gt;&lt;/tr&gt;<br>&nbsp; &lt;tr&gt;&lt;td&gt;&lt;strong&gt;- GPA:&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;${GPA: ${gpa}&lt;/td&gt;&lt;/tr&gt;<br>&nbsp; &lt;tr&gt;&lt;td&gt;&lt;strong&gt;- Remarks:&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;${remarks}&lt;/td&gt;&lt;/tr&gt;<br>&lt;/table&gt;<br>&lt;br&gt;<br>&lt;p&gt;You can view the student record here: ${URI_REF}&lt;/p&gt;<br>&lt;br&gt;<br>&lt;p&gt;Regards,&lt;br&gt;Student Management&lt;/p&gt;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Student Status Update Notification</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups/>
+        <recipient_users>8459a32b833387107713c396feaad301,4819ef2b833387107713c396feaad321</recipient_users>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>The status of student ${first_name} ${last_name} (Student ID: ${number})  has been updated.</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-10-15 06:38:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>04865b3783bbc7107713c396feaad3b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Student Status Update Notification</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Student Management " source="x_2218665_studen_0">73cc7ae783fb47107713c396feaad390</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Student Management ">73cc7ae783fb47107713c396feaad390</sys_scope>
+        <sys_update_name>sysevent_email_action_04865b3783bbc7107713c396feaad3b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-10-15 06:38:07</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>
